@@ -5,6 +5,6 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]]
   :java-source-paths ["src/java"]
-  :jvm-opts ["-javaagent:/home/jonas/local/dcevm-11.0.5+4/lib/hotswap/hotswap-agent.jar=autoHotswap=true"]
+  ;;:jvm-opts ["-javaagent:/home/jonas/local/dcevm-11.0.5+4/lib/hotswap/hotswap-agent.jar=autoHotswap=true"]
   :source-paths ["src/clj"]
   :repl-options {:init-ns hotswap-dcevm-clojure-demo.core})

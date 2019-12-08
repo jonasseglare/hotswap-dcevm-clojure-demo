@@ -6,10 +6,27 @@ To try out Hotswap-agent and DCEVM with Clojure, so that we can reload freshly c
 
 1. Download and unpack TravaOpenJDK from this page: https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/tag/dcevm-11.0.5%2B4
 2. Define `JAVA_HOME` to point at the unpacked directory.
-3. Launch the REPL
+3. Launch the REPL and load the namespace `hotswap-dcevm-clojure-demo.core` a few times.
+4. Edit the file `src/java/Mjao.java` and compile it using `lein javac`.
+5. Load the  file `hotswap-dcevm-clojure-demo.core` again. 
+6. Repeat step 4 and 5...
+```
+Mjao result (3): 13
+Mjao result (3): 13
+Mjao result (3): 13
+HOTSWAP AGENT: 13:15:53.645 RELOAD (org.hotswap.agent.config.PluginManager) - Reloading classes [Mjao] (autoHotswap)
+Mjao result (3): 103
+Mjao result (3): 103
+HOTSWAP AGENT: 13:16:08.070 RELOAD (org.hotswap.agent.config.PluginManager) - Reloading classes [Mjao] (autoHotswap)
+Mjao result (3): 10003
+user> 
+```
 
 ## Instructions
 http://hotswapagent.org/mydoc_plugin_hotswapper.html
+
+Example file of `hotswap-agent.properties`:
+https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties
 
 ## OLD INSTALLATION
 1. Go to [this page](http://hotswapagent.org/) and follow the instructions:
