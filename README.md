@@ -22,19 +22,15 @@ Mjao result (3): 10003
 user> 
 ```
 
-## Instructions
-http://hotswapagent.org/mydoc_plugin_hotswapper.html
+## Summary
+To have automatic class reloading in the REPL, these two things are needed:
+  * A `resources/hotswap-agent.properties` file containing the line `autoHotswap=true`
+  * `JAVA_HOME` environment variable pointing at the JDK [found here](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/tag/dcevm-11.0.5%2B4), or newer.
 
-Example file of `hotswap-agent.properties`:
-https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties
-
-## OLD INSTALLATION
-1. Go to [this page](http://hotswapagent.org/) and follow the instructions:
-```
-JDK 11
-
-Hotswap Agent is now bundled with DCEVM. Just download windows jdk-11-hotswap or linux java-11-openjdk-hotswap.tgz JDK, unpack it and set JAVA_HOME to it’s location (or add it as JDK to your IDE).
-```
+## Documentation
+  * Main page of the project: http://hotswapagent.org/
+  * About the Hotswapper plugin: http://hotswapagent.org/mydoc_plugin_hotswapper.html
+  * Example file of `hotswap-agent.properties`: https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties
 
 ## License
 
