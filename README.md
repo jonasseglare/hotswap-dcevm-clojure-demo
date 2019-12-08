@@ -8,6 +8,8 @@ To try out Hotswap-agent and DCEVM with Clojure, so that we can reload freshly c
 2. Define `JAVA_HOME` to point at the unpacked directory.
 3. Launch the REPL
 
+## Instructions
+http://hotswapagent.org/mydoc_plugin_hotswapper.html
 
 ## OLD INSTALLATION
 1. Go to [this page](http://hotswapagent.org/) and follow the instructions:
