@@ -1,6 +1,9 @@
 # hotswap-dcevm-clojure-demo
 
-To try out Hotswap-agent and DCEVM with Clojure, so that we can reload freshly compiled Java code without restarting the REPL.
+To try out Hotswap-agent and DCEVM with Clojure, so that we can reload freshly compiled Java classes without restarting the REPL. 
+This is useful when developing mixed codebases with both Clojure and Java: We might have a REPL running and then we edit a java
+file that we compile using `lein javac`. Normally, we would have to restart the repl in order for those changes to be visible, 
+but with DCEVM and hotswap-agent, the recompile class file is automatically imported without having to restart the REPL.
 
 ## Usage
 
@@ -29,6 +32,7 @@ To have automatic class reloading in the REPL, these two things are needed:
 
 ## Documentation
   * Main page of the project: http://hotswapagent.org/
+  * Instructions for getting the JDK: http://hotswapagent.org/mydoc_quickstart-jdk11.html
   * About the Hotswapper plugin: http://hotswapagent.org/mydoc_plugin_hotswapper.html
   * Example file of `hotswap-agent.properties`: https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties
 
