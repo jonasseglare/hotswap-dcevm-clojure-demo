@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.10.0"]]
   :java-source-paths ["src/java"]
   :source-paths ["src/clj"]
+  :main hotswap-dcevm-clojure-demo.core
+  :profiles {:repl {:java-cmd "/home/jonas/local/dcevm-11.0.5+4/bin/java"}}
   :repl-options {:init-ns hotswap-dcevm-clojure-demo.core})
